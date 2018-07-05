@@ -21,7 +21,7 @@ After editing the host files, use PiBakery to import the XML file with the OS Se
 
 ## VERIFICATION:
 
-Verification of scan-o-matik is simple. To begin, plug the USB gadget into the PC using the middle USB port of the Pi. Load up Angry IP Scanner and set the IP range to 192.168.137.1 - 254. The Pi will be the only other host alive. Enter this IP into RealVNC. The credentials to login are set from PiBakery (default raspberry). Once in, you can test by entering a filename that's been saved into the correct folder, and a picture should load. If not, move on to the debug phase.
+Verification of scan-o-matik is simple. To begin, plug the USB gadget into the PC using the middle USB port of the Pi. Load up Angry IP Scanner and set the IP range to 192.168.137.1 - 254. The Pi will be the only other host alive. Enter this IP into RealVNC. The credentials to login are set from PiBakery (default is "password"). Once in, you can test by entering a filename that's been saved into the correct folder, and a picture should load. If not, move on to the debug phase.
 
 ## DEBUGGING:
 
