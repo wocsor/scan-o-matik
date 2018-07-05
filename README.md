@@ -1,6 +1,6 @@
 # Scan-O-Matik
 ##### by @wocsor
-## Introducing the amazing ~SCAN-O-MATIK~!
+## Introducing the amazing *SCAN-O-MATIK*!
 This amazing program is able to pull images from "\\metcamfps01\public$\Paint Display\" according to the display number and scanned part number. It is written in Python 3 for easy portability and modifications.
 
 
