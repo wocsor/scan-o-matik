@@ -3,7 +3,7 @@ import socket
 from PIL import ImageTk, Image
 
 root = tkinter.Tk()
-root.title("Scanulator")
+root.title("Scan-O-Matik")
 
 scan = tkinter.StringVar()
 hostname = socket.gethostname()
@@ -39,12 +39,12 @@ class FullScreenApp(object):
 
 def imageload(event):
     global img
-    #edit the line below to reflect the folder you want to scan from
-    path = "/mnt/public$/Production/Paint Display/%s/%s.PNG"%(hostname,scan.get())
+    #edit the line below to reflect the folder containing the folder named after the hostname you set
+    path = "/mnt/share/mount/path/to/folder/%s/%s.PNG"%(hostname,scan.get())
     img = ImageTk.PhotoImage(Image.open(path))
     panel.configure(image = img)
     panel.image = img
-#    print(path) #print out the path for diagnostics
+    print(path) #print out the path for diagnostics
 
 scanboxEntry.bind("<Tab>", imageload)
 
