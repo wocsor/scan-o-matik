@@ -16,8 +16,6 @@ scanboxEntry.pack(side = "top")
 
 img = None
 
-scanboxEntry.focus_set
-
 panel = tkinter.Label(root, image = img)
 root.background_image = panel
 #root.background.pack(fill = "both", expand = "yes")
@@ -46,6 +44,8 @@ def imageload(event):
     panel.image = img
     print(path) #print out the path for diagnostics
 
+	
+scanboxEntry.focus()
 scanboxEntry.bind("<Tab>", imageload)
 
 app=FullScreenApp(root)

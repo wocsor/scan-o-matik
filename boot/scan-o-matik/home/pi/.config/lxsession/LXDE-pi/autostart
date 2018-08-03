@@ -6,3 +6,4 @@
 @xset s off
 @xset -dpms
 @/usr/bin/python3 /home/pi/scan-o-matik.py
+@mount -a
